@@ -38,7 +38,7 @@ EMBEDING_MODEL = os.getenv("OPENAI_MODEL","text-embedding-3-small")
 PG_VECTOR_COLLECTION = os.getenv("PGVECTOR_COLLECTION")
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-model = ChatOpenAI(model="gpt-4.1-nano", temperature=0.5)
+model = ChatOpenAI(model="gpt-5-nano", temperature=0.5)
 
 def search_prompt(question: str):
     embeddings = OpenAIEmbeddings(model=EMBEDING_MODEL)
